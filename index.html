@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Blogr</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- start of hero section -->
+    <div class="hero">
+      <img
+        class="bg_pattern_intro"
+        src="./assets/bg-pattern-intro.svg"
+        alt=""
+      />
+      <div class="wrapper">
+        <header class="header">
+          <img class="header__hamburger" src="./assets/icon-hamburger.svg" alt="hamb_icon"/>
+          <div class="header__logo">
+            <img src="./assets/logo.svg" alt="logo" />
+          </div>
+          <nav class="header__navigation">
+            <ul>
+              <li class="header__navItem" onmouseover="showDropDownList(this)" onmouseout="hideDropDownList(this)">
+                <a href="#">Product</a
+                ><img class="header__navItemArrow" src="./assets/icon-arrow-light.svg" />
+                <div class="header__navItemDropList">
+                  <ul class="header__navItemList">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integration</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__navItem" onmouseover="showDropDownList(this)" onmouseout="hideDropDownList(this)">
+                <a href="#">Company</a
+                ><img class="header__navItemArrow" src="./assets/icon-arrow-light.svg" />
+                <div class="header__navItemDropList">
+                  <ul class="header__navItemList">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__navItem" onmouseover="showDropDownList(this)" onmouseout="hideDropDownList(this)">
+                <a href="#">Connect</a
+                ><img class="header__navItemArrow" src="./assets/icon-arrow-light.svg" />
+                <div class="header__navItemDropList">
+                  <ul class="header__navItemList">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__auth">
+            <button class="header__loginBtn">Login</button>
+            <button class="header__signupBtn">Sign Up</button>
+          </div>
+          <!-- start of the mobile navigation -->
+          <nav class="navigationMobile">
+            <div class="navigationMobile__list">
+              <ul class="navigationMobile__listContainer">
+                <li class="navigationMobile__listItem">
+                  <!-- Item preview -->
+                  <div onClick="handleMobileNavItemClick(this)" class="navigationMobile__item">
+                    <h4 class="navigationMobile__itemTitle">Product</h4>
+                    <img class="navigationMobile__itemIcon" src="./assets/icon-arrow-dark.svg" />
+                  </div>
+                  <!-- Item dropdown list -->
+                  <div class="navigationMobile__dropDownListContainer">
+                    <ul class="navigationMobile__dropDownList">
+                      <li><a href="#">Overview</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Marketplace</a></li>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Integration</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="navigationMobile__listItem">
+                  <!-- Item preview -->
+                  <div onClick="handleMobileNavItemClick(this)" class="navigationMobile__item">
+                    <h4 class="navigationMobile__itemTitle">Company</h4>
+                    <img class="navigationMobile__itemIcon" src="./assets/icon-arrow-dark.svg" />
+                  </div>
+                  <!-- Item dropdown list -->
+                  <div class="navigationMobile__dropDownListContainer">
+                    <ul class="navigationMobile__dropDownList">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="navigationMobile__listItem">
+                  <!-- Item preview -->
+                  <div onClick="handleMobileNavItemClick(this)" class="navigationMobile__item">
+                    <h4 class="navigationMobile__itemTitle">Connect</h4>
+                    <img class="navigationMobile__itemIcon" src="./assets/icon-arrow-dark.svg" />
+                  </div>
+                  <!-- Item dropdown list -->
+                  <div class="navigationMobile__dropDownListContainer">
+                    <ul class="navigationMobile__dropDownList">
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Newsletter</a></li>
+                      <li><a href="#">Linkedin</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="navigationMobile__auth">
+              <button class="navigationMobile__loginBtn">Login</button>
+              <button class="navigationMobile__signupBtn">Sign Up</button>
+            </div>
+          </nav>
+          <!-- end of the mobile navigation -->
+        </header>
+      </div>
+      <div class="hero__content">
+        <h2 class="hero__mainHeading">A modern publishing platform</h2>
+        <h4 class="hero__smallHeading">
+          Grow your audience and build your online brand
+        </h4>
+        <div class="hero__buttons">
+          <button class="hero__buttonStart">Start for Free</button>
+          <button class="hero__buttonLearnMore">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of hero section -->
+    <!-- start of main features -->
+    <div class="mainFeatures">
+      <h2 class="mainFeatures__mainHeading">Designed for the future</h2>
+      <div class="mainFeatures__grid">
+        <div class="mainFeatures__gridItemLeft">
+          <div class="mainFeatures__gridItem">
+            <h3 class="mainFeatures__gridHeading">
+              Introducing an extensible editor
+            </h3>
+            <p class="mainFeatures__gridText">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged
+            </p>
+          </div>
+          <div class="mainFeatures__gridItem">
+            <h3 class="mainFeatures__gridHeading">Robust content management</h3>
+            <p class="mainFeatures__gridText">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+        <div class="mainFeatures__gridItemRight">
+          <img src="./assets/illustration-editor-desktop.svg" srcset="./assets/illustration-editor-mobile.svg, ./assets/illustration-editor-desktop.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end of main features -->
+    <!-- start of secondary feature -->
+    <div class="secondaryFeature">
+      <div class="secondaryFeatureBackCircle"></div>
+      <div class="secondaryFeature__grid">
+        <div class="secondaryFeature__gridItemLeft">
+          <div class="secondaryFeature__gridImageContainer">
+            <img src="./assets/illustration-phones.svg" alt="" />
+          </div>
+        </div>
+        <div class="secondaryFeature__gridItemRight">
+          <h2 class="secondaryFeature__gridItemHeading">
+            State of the Art Infrastructure
+          </h2>
+          <p class="secondaryFeature__gridItemText">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of secondary feature -->
+    <!-- start of third features -->
+    <div class="thirdFeatures">
+      <div class="thirdFeatures__grid">
+        <div class="thirdFeatures__gridItemLeft">
+          <img src="./assets/illustration-laptop-desktop.svg" alt="" />
+        </div>
+        <div class="thirdFeatures__gridItemRight">
+          <div class="thirdFeatures__gridItem">
+            <h3 class="thirdFeatures__gridHeading">Free, open, simple</h3>
+            <p class="thirdFeatures__gridText">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged
+            </p>
+          </div>
+          <div class="thirdFeatures__gridItem">
+            <h3 class="thirdFeatures__gridHeading">Powerful tooling</h3>
+            <p class="thirdFeatures__gridText">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of third features -->
+    <!-- start of footer -->
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__gridItem">
+          <img class="footer__logo" src="./assets/logo.svg" alt="logo" />
+        </div>
+        <div class="footer__gridItem">
+          <h4 class="footer__gridItemHeading">Product</h4>
+          <ul class="footer__gridItemList">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer__gridItem">
+          <h4 class="footer__gridItemHeading">Company</h4>
+          <ul class="footer__gridItemList">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__gridItem">
+          <h4 class="footer__gridItemHeading">Connect</h4>
+          <ul class="footer__gridItemList">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#"">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+  <script>
+    // Show dropdown list (desktop)
+    const showDropDownList = (e) => {
+      const dropdownList = e.querySelector(".header__navItemDropList");
+      const arrow = e.querySelector(".header__navItemArrow");
+      // show dropdown list
+      dropdownList.style.visibility = "visible";
+      dropdownList.style.opacity = "1";
+      // rotate icon
+      arrow.style.transform = "rotate(180deg)";
+    }
+
+    // Hide dropdown list (desktop)
+    const hideDropDownList = (e) => {
+      const dropdownList = e.querySelector(".header__navItemDropList");
+      const arrow = e.querySelector(".header__navItemArrow");
+      // hide dropdown list
+      dropdownList.style.visibility = "hidden";
+      dropdownList.style.opacity = "0";
+      // rotate icon
+      arrow.style.transform = "rotate(0deg)";
+    }
+
+    // Toggle navigation mobile
+    const hamb_icon = document.querySelector(".header__hamburger");
+    const toggleMobileNav = () => {
+      const mobileNav = document.querySelector(".navigationMobile");
+      // check if mobile nav is active, if yes then remove active class
+      if(mobileNav.classList.contains("visible-nav")) {
+        mobileNav.classList.remove("visible-nav");
+        hamb_icon.src = "./assets/icon-hamburger.svg";
+      } else {
+        // else statement, then add active class
+        mobileNav.classList.add("visible-nav");
+        hamb_icon.src = "./assets/icon-close.svg";
+      }
+    }
+
+    hamb_icon.addEventListener("click", toggleMobileNav);
+
+    // Handle mobile nav item click (show dropdownlist)
+    const handleMobileNavItemClick = (e) => {
+      const dropdownList = e.nextElementSibling;
+      const arrowIcon = e.querySelector(".navigationMobile__itemIcon");
+      if(!dropdownList) return;
+
+      // check first if dropdown list is already active
+      if(dropdownList.style.height === "auto") {
+        // hide it
+        dropdownList.style.height = "0";
+        dropdownList.style.opacity = "0";
+        // change arrow icon
+        arrowIcon.style.transform = "rotate(0deg)";
+      } else {
+        // instead show it
+        dropdownList.style.height = "auto";
+        dropdownList.style.opacity = "1";
+        // change arrow icon
+        arrowIcon.style.transform = "rotate(180deg)";
+      }
+      
+    }
+  </script>
+</html>
+
